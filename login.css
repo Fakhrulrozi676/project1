@@ -1,0 +1,14 @@
+body {
+    background-image: url(sage.jpg);
+    width: max-content;
+}
+form {
+    margin : 200px 400px 500px ;
+    border: 5px solid blue;
+    background-color: aliceblue;
+    padding: 5px;
+}
+.button {
+    margin-left: 100px;
+}
+    

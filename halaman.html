@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+    <head>
+        <title>Tiruan SAGE</title>
+        <link rel="stylesheet" href="halaman.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    
+<body>
+    <div class="header">
+        <img src="sage.jpg" alt="">
+        <h1>Tiruan SAGE System</h1>
+        <div class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#Bantuan">Bantuan</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content"> 
+        <div id="home">
+        <h1>
+            <marquee>Selamat Datang Guys di Tiruan SAGE
+            <span>Kalian bisa belajar disini Guys</span></marquee>
+        </h1>  
+        <img src="https://media.istockphoto.com/photos/business-presentation-picture-id598259376?k=6&m=598259376&s=170667a&w=0&h=srmzIktjf1hqKuTQB4-ByUBgeHV53VMXML_SNpi4jaE=">
+        </div>
+    </div>
+    <div class="content">
+        <div id="history">
+            <h3>History Pembuatan Tiruan SAGE</h3>
+            <p>Pembuatan Tiruan SAGE dilatarbelakangi oleh keresahan pembuat aplikasi Tiruan
+                Dalam aplikasi ini. Ketika itu banyak yang harus dikerjakan oleh user tetapi kita minim informasi
+            </p>
+        </div>
+        <div id="about">
+            <h3>Tentang Website Ini</h3>
+            <p>Website ini menggunakan</p>
+            <div class="baris">
+                <p>HTML</p>
+                <p>css</p>
+                <p>Javascript</p>
+            </div>
+        </div>
+        <div id="Bantuan">
+            <h2>Bantuan</h2>
+            <form action="javascript.js">
+            <table>
+                <tr><td><input type="text"  placeholder="Nama" style="width:150%"></td></tr>
+                <tr><td><input type="email"  placeholder="example@email.com"style="width:150%"></td></tr>
+                <tr><td><textarea name="Komentar" id="Komen" cols="30" rows="10" placeholder="Tulis Komentarmu Disini"style="width:150%"></textarea></td></tr> 
+            </table>
+            <input type="button" value="Bantuan">
+        </form>
+        </div>
+    </div>
+    <div class="sidebar">
+        <ul> 
+            <li id="list1"><a href="#">A/R Account Receiveble</a></li>
+                <ul id="drop1">
+                    <li><a href="#">A/R Customer Report</a></li>
+                    <li><a href="#">A/R Customer</a></li>
+                    <li><a href="#">A/R Periodic Processing</a></li>
+                    <li><a href="#">A/R Setup</a></li>
+                    <li><a href="#">A/R Setup Report</a></li>
+                    <li><a href="#">A/R Transaction Report</a></li>
+                    <li><a href="#">A/R Transaction</a></li>
+                </ul>
+            <li id="list2"><a href="#">A/P Account Payable</a></li>
+                <ul id="drop2">
+                    <li><a href="#">A/P Periodic Processing</a></li>
+                    <li><a href="#">A/P Setup</a></li>
+                    <li><a href="#">A/P Setup Report</a></li>
+                    <li><a href="#">A/P Transaction Report</a></li>
+                    <li><a href="#">A/P Transaction</a></li>
+                    <li><a href="#">A/P Vendor Report</a></li>
+                    <li><a href="#">A/P Vendor</a></li>
+                </ul>
+            <li id="list3"><a href="#">CashBook</a></li>
+            <ul id="drop3">
+                <li><a href="#">C/B Analysis Report</a></li>
+                <li><a href="#">C/B Audit Report</a></li>
+                <li><a href="#">C/B Bank Reconciliation</a></li>
+                <li><a href="#">C/B Periodic Processing</a></li>
+                <li><a href="#">C/B Setup</a></li>
+                <li><a href="#">C/B Transaction Report</a></li>
+                <li><a href="#">C/B Transaction</a></li>
+            </ul>
+            <li id="list4"><a href="#">Common Service</a></li>
+            <ul id="drop4">
+                <li><a href="#">Currency</a></li>
+            </ul>
+            <li><a href="#">Administrative</a></li>
+            <li id="list5"><a href="#">I/C Inventory Control</a></li>
+            <ul id="drop5">
+                <li><a href="#">I/C Items and Price List</a></li>
+                <li><a href="#">I/C Periodic Processing</a></li>
+                <li><a href="#">I/C Physical Inventory</a></li>
+                <li><a href="#">I/C Price/Sales Analysis Report</a></li>
+                <li><a href="#">I/C Setup</a></li>
+                <li><a href="#">I/C Setup Report</a></li>
+                <li><a href="#">I/C Statistics and Inquiries</a></li>
+                <li><a href="#">I/C Stock Control Report</a></li>
+                <li><a href="#">I/C Transaction</a></li>
+            </ul>
+            <li>M/F Manufacturing</li>
+            <li>O/E Order Entry</li>
+            <li>P/O Purcahse Order</li>
+        </ul>
+    </div>
+    <script>
+        $(document).ready(function (){
+            $('#list1').on('click',function(){
+                $('#drop1').toggle();
+            });
+            $('#list2').on('click',function(){
+                $('#drop2').toggle();
+            });
+            $('#list3').on('click',function(){
+                $('#drop3').toggle();
+            });
+            $('#list4').on('click',function(){
+                $('#drop4').toggle();
+            });
+            $('#list5').on('click',function(){
+                $('#drop5').toggle();
+            });
+        })
+    </script>
+    <div class="footer">
+        <p>Copyright &copy; Fakhrul Rozi tahun 2022</p>
+    </div>
+</body>
+</html>
